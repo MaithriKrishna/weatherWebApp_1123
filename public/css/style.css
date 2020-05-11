@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    margin:0;
+    background-color: lightgrey;
+}
+
+h1{
+    color: blue;
+}
+
+#error{
+    color: red;
+    background: beige;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#error:empty, #forecast:empty{
+    display: none;
+}
+
+#forecast{
+    color: navy;
+    background: beige;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+form{
+    padding: 20px 10px 10px;
+}
+
+.form-header{
+    font-weight: bold;
+    color: darkred;
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+
+input.error{
+    color: red;
+    border-color:red;
+}
+
+button{
+    background-color: midnightblue;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
