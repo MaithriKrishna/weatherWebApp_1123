@@ -4,6 +4,8 @@ const app = express();
 const geoLocation = require('./utils/geoLocation');
 const weatherForecast = require('./utils/weatherForecast');
 
+const port = process.env.PORT || 3000;
+
 const publicDirectory = path.join(__dirname, './public');
 
 app.use(express.static(publicDirectory))
@@ -45,6 +47,6 @@ app.get('*', (req, res) => {
     res.send('Oops, Something went wrong!!!!!!')
 })
 
-app.listen(3000, () => {
-    console.log('Server isup and running on port 3000');
+app.listen(port, () => {
+    console.log('Server isup and running on port ' + port);
 })
