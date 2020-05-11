@@ -6,6 +6,7 @@ body{
 
 h1{
     color: blue;
+    margin-bottom: 10px;
 }
 
 #error{
@@ -55,4 +56,10 @@ button{
     color: white;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.author{
+    font-size: 13px;
+    margin: 10px 0 40px;
+    color: midnightblue;
 }
